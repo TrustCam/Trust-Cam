@@ -7,6 +7,25 @@
   <meta name="description" content="Професионален монтаж на камери за видеонаблюдение: безплатен оглед, бърз и чист монтаж в рамките на ден, настройка за гледане през телефон, гаранция и поддръжка. Тел.: 0899 920 540" />
   <link rel="canonical" href="https://example.com/" />
 
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3681441138667187');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=3681441138667187&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <style>
     :root{
       --bg:#f0f8f5;
@@ -66,12 +85,12 @@
     summary{cursor:pointer;font-weight:700;color:var(--text)}
     details[open] summary{margin-bottom:8px}
 
-    /* FOOTER — единствената промяна: по-тъмен зелен фон + бял текст */
+    /* FOOTER — по-тъмен зелен фон + бял текст */
     footer{
       padding:28px 0;
       border-top:1px solid #0b2d22;
       color:#ffffff;
-      background:#0f3d2e; /* тъмнозелено */
+      background:#0f3d2e;
       text-align:center;
     }
 
@@ -123,7 +142,7 @@
         <span class="badge">Безплатен оглед</span>
       </div>
       <div class="actions">
-        <a class="btn small" href="tel:+359899920540">📞 0899 920 540</a>
+        <a class="btn small" href="tel:+359899920540" onclick="fbq('track','Contact');">📞 0899 920 540</a>
         <!-- Сменен WhatsApp с Viber -->
         <a class="btn ghost small" href="viber://chat?number=%2B359899920540" rel="noopener">💬 Viber</a>
       </div>
@@ -138,7 +157,7 @@
           <h1>Професионален монтаж на камери<br />и настройка за гледане през телефон</h1>
           <p>Доставка, инсталация и обучение за работа. Работим чисто и бързо – в рамките на ден. Даваме гаранция и осигуряваме поддръжка при нужда.</p>
           <div class="actions">
-            <a class="btn" href="tel:+359899920540">📞 Обадете се сега</a>
+            <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">📞 Обадете се сега</a>
             <a class="btn ghost" href="#prices">💬 Вижте цени и пакети</a>
           </div>
       </div>
@@ -229,7 +248,7 @@
             <li>Запис на локален рекордер или карта памет*</li>
           </ul>
           <div class="cta-line">
-            <a class="btn" href="tel:+359899920540">Заяви оферта</a>
+            <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">Заяви оферта</a>
             <a class="btn ghost" href="#faq">Въпроси</a>
           </div>
         </article>
@@ -245,7 +264,7 @@
             <li>Запис с достъп през телефон</li>
           </ul>
           <div class="cta-line">
-            <a class="btn" href="tel:+359899920540">Заяви оферта</a>
+            <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">Заяви оферта</a>
             <a class="btn ghost" href="#faq">Въпроси</a>
           </div>
         </article>
@@ -261,7 +280,7 @@
             <li>Индивидуална оферта и SLA</li>
           </ul>
           <div class="cta-line">
-            <a class="btn" href="tel:+359899920540">Заяви оферта</a>
+            <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">Заяви оферта</a>
             <a class="btn ghost" href="#faq">Въпроси</a>
           </div>
         </article>
@@ -300,7 +319,7 @@
           <p class="muted" style="margin:4px 0 0">Обадете се или ни пишете – ще предложим най-подходящата конфигурация.</p>
         </div>
         <div class="actions">
-          <a class="btn" href="tel:+359899920540">📞 0899 920 540</a>
+          <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">📞 0899 920 540</a>
           <!-- Сменен WhatsApp с Viber -->
           <a class="btn ghost" href="viber://chat?number=%2B359899920540" rel="noopener">💬 Viber</a>
         </div>
@@ -310,14 +329,14 @@
 
   <footer>
     <div class="container">
-      <p><strong>Телефон: <a href="tel:+359899920540" style="color:#ffd700">0899 920 540</a></strong></p>
+      <p><strong>Телефон: <a href="tel:+359899920540" style="color:#ffd700" onclick="fbq('track','Contact');">0899 920 540</a></strong></p>
       <!-- Добавен TikTok и линк за политика -->
       <p>TikTok: <strong>@trustcam00</strong> · <a href="#" id="privacy-toggle" style="color:#ffd700">Политика за лични данни</a></p>
       <p class="muted" style="color:#cfe6da">© 2025 Монтаж на Камери — Всички права запазени.</p>
     </div>
   </footer>
 
-  <a class="phone-stick" href="tel:+359899920540">📞 Обаждане</a>
+  <a class="phone-stick" href="tel:+359899920540" onclick="fbq('track','Contact');">📞 Обаждане</a>
 
   <!-- Банер за бисквитки -->
   <div id="cookie-banner">
