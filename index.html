@@ -142,7 +142,7 @@
         <span class="badge">Безплатен оглед</span>
       </div>
       <div class="actions">
-        <a class="btn small" href="tel:+359899920540" onclick="fbq('track','Contact');">📞 0899920540</a>
+        <a class="btn small" href="tel:+359899920540">📞 0899920540</a>
         <!-- Viber бутонът е премахнат -->
       </div>
     </div>
@@ -156,7 +156,7 @@
           <h1>Професионален монтаж на камери<br />и настройка за гледане през телефон</h1>
           <p>Доставка, инсталация и обучение за работа. Работим чисто и бързо – в рамките на ден. Даваме гаранция и осигуряваме поддръжка при нужда.</p>
           <div class="actions">
-            <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">📞 Обадете се сега</a>
+            <a class="btn" href="tel:+359899920540">📞 Обадете се сега</a>
             <a class="btn ghost" href="#prices">💬 Вижте цени и пакети</a>
           </div>
       </div>
@@ -247,7 +247,7 @@
             <li>Запис на локален рекордер или карта памет*</li>
           </ul>
           <div class="cta-line">
-            <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">Заяви оферта</a>
+            <a class="btn" href="tel:+359899920540">Заяви оферта</a>
             <a class="btn ghost" href="#faq">Въпроси</a>
           </div>
         </article>
@@ -263,7 +263,7 @@
             <li>Запис с достъп през телефон</li>
           </ul>
           <div class="cta-line">
-            <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">Заяви оферта</a>
+            <a class="btn" href="tel:+359899920540">Заяви оферта</a>
             <a class="btn ghost" href="#faq">Въпроси</a>
           </div>
         </article>
@@ -279,7 +279,7 @@
             <li>Индивидуална оферта и SLA</li>
           </ul>
           <div class="cta-line">
-            <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">Заяви оферта</a>
+            <a class="btn" href="tel:+359899920540">Заяви оферта</a>
             <a class="btn ghost" href="#faq">Въпроси</a>
           </div>
         </article>
@@ -318,7 +318,7 @@
           <p class="muted" style="margin:4px 0 0">Обадете се или ни пишете – ще предложим най-подходящата конфигурация.</p>
         </div>
         <div class="actions">
-          <a class="btn" href="tel:+359899920540" onclick="fbq('track','Contact');">📞 0899920540</a>
+          <a class="btn" href="tel:+359899920540">📞 0899920540</a>
           <!-- Viber бутонът е премахнат -->
         </div>
       </div>
@@ -327,14 +327,14 @@
 
   <footer>
     <div class="container">
-      <p><strong>Телефон: <a href="tel:+359899920540" style="color:#ffd700" onclick="fbq('track','Contact');">0899 920 540</a></strong></p>
+      <p><strong>Телефон: <a href="tel:+359899920540" style="color:#ffd700">0899 920 540</a></strong></p>
       <!-- Добавен TikTok и линк за политика -->
       <p>TikTok: <strong>@trustcam00</strong> · <a href="#" id="privacy-toggle" style="color:#ffd700">Политика за лични данни</a></p>
       <p class="muted" style="color:#cfe6da">© 2025 Монтаж на Камери — Всички права запазени.</p>
     </div>
   </footer>
 
-  <a class="phone-stick" href="tel:+359899920540" onclick="fbq('track','Contact');">📞 Обаждане</a>
+  <a class="phone-stick" href="tel:+359899920540">📞 Обаждане</a>
 
   <!-- Банер за бисквитки -->
   <div id="cookie-banner">
@@ -381,6 +381,13 @@
         });
       }
     }
+
+    // ✅ Тракване на кликове по телефонните линкове без да блокираме набирането
+    document.querySelectorAll('a[href^="tel:"]').forEach(a=>{
+      a.addEventListener('click', function(){
+        try{ fbq('track','Contact'); }catch(e){}
+      }, {passive:true});
+    });
   </script>
 </body>
 </html>
